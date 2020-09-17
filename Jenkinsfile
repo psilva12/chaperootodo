@@ -22,7 +22,6 @@ pipeline{
                 }
             stage('Run Container'){
                 steps{
-                    sh "export DB_PASSWORD=password"
                     sh "sudo docker-compose up -d"
                 }
             }
