@@ -22,7 +22,6 @@ pipeline{
                 }
             stage('Run Container'){
                 steps{
-                    sh "sudo docker-compose up -d"
                     sh "sudo docker run -d --name chaptodo -p 80:80 chaperoo"
                 }
             }
