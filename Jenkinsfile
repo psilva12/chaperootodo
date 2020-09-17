@@ -1,5 +1,6 @@
 pipeline{
         agent any
+        ssh -t remotehost "sudo <cmd>"
         stages{
             stage('Install dependecies'){
                steps{
